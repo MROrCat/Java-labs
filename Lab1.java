@@ -6,7 +6,7 @@ public class Lab1 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("=== Лабораторная работа №1 ===");
-        // ЗАДАНИЕ 1. МЕТОДЫ
+        
         double x1_1 = 0;
         while (true) {
             System.out.print("\n[Задача 1.1] Введите вещественное число (например, 5,25): ");
