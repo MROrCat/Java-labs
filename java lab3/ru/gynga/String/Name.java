@@ -1,7 +1,7 @@
 package ru.gynga.String;
 
 public class Name {
-    // 1. Поля теперь private final — гарантируют неизменяемость объекта [index: 0.1.2]
+    // 1. Поля теперь private final — гарантируют неизменяемость объекта
     private final String firstName;   
     private final String lastName;   
     private final String patronymic;  
@@ -16,7 +16,7 @@ public class Name {
 
     // 2. Главный конструктор, где мы проверяем входные данные
     public Name(String firstName, String lastName, String patronymic) {
-        // Проверяем, что хотя бы одно поле содержит осмысленный текст (не null и не пустое) [index: 0.1.2]
+        // Проверяем, что хотя бы одно поле содержит осмысленный текст (не null и не пустое)
         if (!isValid(firstName) && !isValid(lastName) && !isValid(patronymic)) {
             throw new IllegalArgumentException("Ошибка! Как минимум один параметр должен быть заполнен (не null и не пустой).");
         }
